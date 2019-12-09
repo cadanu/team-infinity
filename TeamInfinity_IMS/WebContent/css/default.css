@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko&display=swap');
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	
+	height: 70px;
+	width: 100%;
+	background-color: black;
+	color: white;
+}
+
+body {
+	
+}
+
+#main-container {
+	margin: auto;
+	margin-top: 75px;
+	padding: 20px;
+	
+	width: 100%;
+}
+
+#top-name {
+	font-family:'Teko', sans-serif;
+}
+
+.extra-padding {
+	padding: 10px;
+}
+
+footer {
+	background-color: silver;
+}
