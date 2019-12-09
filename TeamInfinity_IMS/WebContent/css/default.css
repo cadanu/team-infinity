@@ -2,8 +2,39 @@
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Teko&display=swap');
 
+body {
+	height: 100%;
+}
+
 html, body {
 	font-family: 'Open Sans', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.7;
+}
+
+input[type=submit] {
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+input[type=submit]:hover {
+	background-color: black;
+	color: white;
+}
+
+fieldset {
+	padding: 15px;
+}
+
+input {
+	margin: 5px;
 }
 
 header {
@@ -29,7 +60,19 @@ body {
 }
 
 #top-name {
+	display: inline-block;
 	font-family:'Teko', sans-serif;
+}
+
+#top-button-box {
+	position: absolute;
+	right: 20px;
+	margin: 40px;
+}
+
+.top-button {
+	margin: 10px;
+	padding: 5px;
 }
 
 .extra-padding {
@@ -37,5 +80,10 @@ body {
 }
 
 footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 36px;
+	
 	background-color: silver;
 }
