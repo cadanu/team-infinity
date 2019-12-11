@@ -31,9 +31,18 @@ input[type=submit]:hover {
 
 fieldset {
 	padding: 15px;
+	color: slate-grey;
+}
+
+legend {
+	color: #333333;
 }
 
 input {
+	margin: 5px;
+}
+
+select {
 	margin: 5px;
 }
 

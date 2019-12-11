@@ -15,10 +15,13 @@
 <div id="main-container">
 	<div><h2 style="color: red">Please enter your login credentials.</h2><br><br>
 		<form action="#" method="post">
-			<label for="user-name">Username: </label>
-			<input type="text" id="user-name" name="user-name" size="20" required/>
-			<label for="password">Password: </label>
-			<input type="text" id="password" name="password" size="20" required/>
+			
+			<input type="hidden" value="login"/>
+			
+			<label for="usr">Username: </label>
+			<input type="text" id="usr" name="usr" size="20" required/>
+			<label for="pss">Password: </label>
+			<input type="text" id="pss" name="pss" size="20" required/>
 			
 			<input type="submit" value="Login"/>
 		</form><br><br>
