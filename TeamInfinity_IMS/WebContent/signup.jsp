@@ -19,7 +19,7 @@
 			toll-free at 1-800-555-TIMS. Our customer support agents are standing by to assist you.<br>			
 		</p>
 		<br><h2 style="color: red;">Please fill out the sign up form below then press submit.</h2><br><br>
-		<form action="#" method="post">
+		<form action="UserControl" method="post">
 		
 		<input type="hidden" name="action" value="signup"/>
 		

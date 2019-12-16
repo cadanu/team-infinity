@@ -66,6 +66,32 @@ body {
 	padding: 20px;
 	
 	width: 100%;
+	
+}
+
+/* packages - two boxes on welcome screen for product selection */
+#package-select {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	
+	height: 100%;
+	width: 100%;
+	
+	margin-top: 20px;
+	padding: 10px;
+}
+.packages {
+	
+	height: 400px;
+	width: 300px;
+	background-color: orange;
+	
+	border: 1px solid black;
+	border-radius: 10px;
+	
+	margin: 20px;
 }
 
 #top-name {

@@ -14,14 +14,14 @@
 
 <div id="main-container">
 	<div><h2 style="color: red">Please enter your login credentials.</h2><br><br>
-		<form action="#" method="post">
+		<form action="UserControl" method="post">
 			
-			<input type="hidden" value="login"/>
+			<input type="hidden" name="action" value="login"/>
 			
 			<label for="usr">Username: </label>
-			<input type="text" id="usr" name="usr" size="20" required/>
+			<input type="email" id="usr" name="usr" size="20" placeholder="email" required/>
 			<label for="pss">Password: </label>
-			<input type="text" id="pss" name="pss" size="20" required/>
+			<input type="password" id="pss" name="pss" size="20" required/>
 			
 			<input type="submit" value="Login"/>
 		</form><br><br>
