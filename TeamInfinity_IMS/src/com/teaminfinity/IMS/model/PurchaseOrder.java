@@ -7,7 +7,7 @@ public class PurchaseOrder implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private int po_id;
-	private Date date;
+	private String date;
 	private int userId;
 	private int productId;
 	private int customerId;
@@ -22,11 +22,11 @@ public class PurchaseOrder implements Serializable {
 		this.po_id = po_id;
 	}
 
-	public Date getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 

@@ -4,8 +4,7 @@ import java.io.Serializable;
 
 public class Business implements Serializable {
 	private static final long serialVersionUID = 1L;
-	
-	private int businessId;
+
 	private String businessName;
 	private String streetAdd;
 	private String streetAdd2;
@@ -16,14 +15,6 @@ public class Business implements Serializable {
 	private int entityId;
 	
 	public Business() {}
-
-	public int getBusinessId() {
-		return businessId;
-	}
-
-	public void setBusinessId(int businessId) {
-		this.businessId = businessId;
-	}
 
 	public String getBusinessName() {
 		return businessName;

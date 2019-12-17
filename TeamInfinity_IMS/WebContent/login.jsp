@@ -19,7 +19,7 @@
 			<input type="hidden" name="action" value="login"/>
 			
 			<label for="usr">Username: </label>
-			<input type="email" id="usr" name="usr" size="20" placeholder="email" required/>
+			<input type="email" id="usr" name="usr" size="20" value="${email}" required/>
 			<label for="pss">Password: </label>
 			<input type="password" id="pss" name="pss" size="20" required/>
 			

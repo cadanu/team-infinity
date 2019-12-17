@@ -29,6 +29,15 @@ input[type=submit]:hover {
 	color: white;
 }
 
+input[type=text][type=number] {
+	padding: 5px;
+}
+
+input.textarea {
+	height: 100px;
+	width: 300px;
+}
+
 fieldset {
 	padding: 15px;
 	color: slate-grey;
