@@ -9,7 +9,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.teaminfinity.IMS.model.Category;
-import com.teaminfinity.IMS.model.Persons;
 import com.teaminfinity.IMS.model.Product;
 import com.teaminfinity.IMS.model.PurchaseOrder;
 

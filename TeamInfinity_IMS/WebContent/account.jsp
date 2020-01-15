@@ -4,9 +4,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	
+	<meta charset="ISO-8859-1">	
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/design.css"/>
 	<title>Team Infinity: Infinity Management System</title>
 </head>
 <body>
@@ -20,18 +20,21 @@
 		<span ><a href="products.jsp" rel="Manage your inventory">Manage Inventory</a></span><br><br>
 	</div>
 	
-	<div id="account-summary" style="position:absolute;right:30%;border:1px solid silver;padding:20px;">
+	<div id="summary-box" style="position:absolute;right:30%;border:1px solid silver;padding:20px;">
 	<fieldset>
 	<legend>Account Summary</legend>
 	<form action="#" method="post">
 		<table>
-			<th></th>
+			<tr><th>User Information</th></tr>
 			<tr>
 				<td><input type="text" name="first-name" value="${firstName}"></td><td><input type="text" name="last-name" value="${lastName}"></td>
 			</tr>
 			<tr>
 				<td><input type="text" name="email" value="${email}"></td>
 			</tr>
+			<tr></tr>
+			<tr></tr>
+			<tr><th>Business Information</th></tr>
 			<tr>
 				<td><input type="text" name="business-name" value="${businessName}"></td>
 			</tr>

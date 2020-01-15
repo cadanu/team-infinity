@@ -13,6 +13,7 @@ public class Product implements Serializable {
 	private String location;
 	private int price;
 	private int categoryId;
+	private String description;
 	
 	
 	public Product() {}
@@ -72,6 +73,18 @@ public class Product implements Serializable {
 
 	public void setCategoryId(int categoryId) {
 		this.categoryId = categoryId;
+	}
+
+
+	public String getDescription() {
+		return description;
+	}
+
+
+	public void setDescription(String description) {
+		this.description = description;
 	}	
+	
+	
 
 }

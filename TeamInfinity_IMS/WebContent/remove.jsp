@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	
+	<meta charset="ISO-8859-1">	
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/design.css"/>
 	<title>IMS: Product Summary and Update</title>
 </head>
 <body>
@@ -22,7 +23,7 @@
 		<span ><a href="products.jsp" rel="Remove Records">Update Product</a></span>
 	</div>
 	
-	<div id="product-summary" style="position:absolute;right:38%;">
+	<div id="summary-box" style="position:absolute;right:38%;">
 	
 	<fieldset>
 	<legend><b>Product Removal</b></legend>

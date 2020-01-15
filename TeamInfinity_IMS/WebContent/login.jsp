@@ -6,6 +6,7 @@
 	<meta charset="ISO-8859-1">
 	
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/design.css"/>
 	<title>Team Infinity: User Authentication</title>
 </head>
 <body>

@@ -2,6 +2,7 @@ package com.teaminfinity.IMS.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -30,13 +31,25 @@ public class ProductController extends HttpServlet {
 		if(request.getParameter("action")=="add") {
 			Product prod = new Product();
 			
-			prod.setProductName(request.getParameter("name"));
-			prod.setAmount(Integer.parseInt(request.getParameter("amount")));
+			prod.setProductId(Integer.parseInt(request.getParameter("category")));
+			prod.setProductName(request.getParameter("product-name"));
+			prod.setAmount(Integer.parseInt(request.getParameter("stock-amount")));
 			prod.setReorderAmount(Integer.parseInt(request.getParameter("reorder-amount")));
 			prod.setLocation(request.getParameter("location"));
 			prod.setPrice(Integer.parseInt(request.getParameter("price")));
+			prod.setDescription(request.getParameter("description"));
 			//prod.setCategoryId(Integer.parseInt(request.getParameter("")));
-		}
-	}
+			prod.setCategoryId(0);
+			
+			try {
+				crud.insertIntoProduct(prod);
+			} catch (ClassNotFoundException cnfe) {
+				cnfe.printStackTrace();
+			} catch (SQLException se) {
+				se.printStackTrace();
+			}		
+			//session.setAttribute("name", );
+		}		
+	}// end doPost
 
 }

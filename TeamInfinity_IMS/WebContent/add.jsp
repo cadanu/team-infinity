@@ -1,11 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="ISO-8859-1">
-	
+	<meta charset="ISO-8859-1">	
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/design.css"/>
 	<title>IMS: Add Product</title>
 </head>
 <body>
@@ -22,20 +23,26 @@
 		<span ><a href="remove.jsp" rel="Remove Records">Remove Product</a></span>
 	</div>
 	
-	<div id="product-summary" style="position:absolute;right:38%;">
+	<div id="summary-box" style="position:absolute;right:38%;">
 	
 	<fieldset>
 	<legend><b>Add Product</b></legend>
-	<form action="#" method="post">
-		<input type="hidden" name="action" value="add">
+	<form action="ProductControl" method="post">
+		<input type="hidden" name="action" value="add">	
 		<table>
-			
+			<tr><td><select name="category" style="float:right;">
+				<option value="default" disabled>Categories</option>
+				<option value="standard">Standard item</option>
+				<option value="perishable">Perishables</option>
+				<option value="hazardous">Hazardous item</option>
+			</select></td></tr>
 				<tr><td>Product Name:</td></tr>
-			<tr><td><input type="text" name="product-name" placeholder="Enter product details..."></td>
-				<tr><td>Amount of stock:</td></tr>
+			<tr><td><input type="text" name="product-name" size="40" placeholder="Enter product details..."></td>
+			
+				<tr><td>Amount of stock:</td><td>Reorder amount:</td></tr>
 			<tr><td><input type="number" name="stock-amount" value="${amount}"></td>
-				<tr><td>Reorder amount:</td>
-				<td><input type="number" name="reorder-amount" value="${reorder-amount}"></td></tr>
+			
+			<td><input type="number" name="reorder-amount" value="${reorder-amount}"></td></tr>
 				<tr><td>Location:</td></tr>
 			<tr><td><input type="text" name="location" value="${location}"></td></tr>
 				<tr><td>Price per item:</td></tr>
@@ -44,8 +51,10 @@
 			<tr><td><input class="textarea" type="text" name="description" value="${description}"></td></tr>
 			
 		</table>
+		<input type="submit" value="ADD PRODUCT">
 	</form>
 	</fieldset>
+	
 	<form action="#" method="post">
 		
 	</form>

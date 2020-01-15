@@ -1,11 +1,11 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-	<meta charset="ISO-8859-1">
-
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/default.css"/>
+	<link rel="stylesheet" type="text/css" href="css/design.css"/>
 	<script></script>
 	<title>Team Infinity: Infinity Management System</title>
 </head>
